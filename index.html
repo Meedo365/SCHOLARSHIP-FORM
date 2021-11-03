@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Scholarship App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>scholarship form</p>
+        </div>
+        <div class="info">
+            <div class="biodata">
+                <form action="#">
+                    <h3 class="h3">Student Personal Information:</h3>
+                    <div class="grid-container">
+                        <div class="grid-item div-space">
+                            <label for="#">First Name: </label> <br><br>
+                            <input type="text" id="stdFName" placeholder="enter your first name">
+                            <p id="FnmeErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">Last Name: </label> <br><br>
+                            <input type="text" id="stdLName" placeholder="enter your last name">
+                            <p id="LnmeErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">Date of birth (DOB): </label> <br><br>
+                            <input type="date" id="dob" placeholder="enter your date of birth">
+                            <p id="dobErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">Age: </label> <br><br>
+                            <p id="age"></p>
+                            <p id="ageErr"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">Email: </label> <br><br>
+                            <input type="email" id="email" placeholder="enter your email">
+                            <p id="emailErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">phone number: </label> <br><br>
+                            <input type="text" id="pNumb" placeholder="enter your mobile number">
+                            <p id="pNumbErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="#">Nationality: </label> <br><br>
+                            <input list="country" id="countryName" placeholder="choose a country">
+                            <datalist id="country">
+                                <!-- <option value="america">
+                                <option value="africa"> -->
+                            </datalist>
+                            <p id="cntryErrMsg" class="errMsg"></p>
+                        </div>
+                        <div class="grid-item">
+                            <label for="#">Gender: </label> <br><br>
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="#">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="">Female</label>
+                            </div>
+                            <p id="genderErr" class="errMsg"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" id="biodata"><a>Save</a></button>
+                    </div>
+                </form>
+            </div>
+            <hr class="line">
+            <div class="acadInfo">
+                <form action="#">
+                    <h3 class="h3"> student academic information:</h3>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <label for="#">subjects and scores:</label>
+                            <div class="grid-container paragrf-div">
+                                <div class="grid-item div-space">
+                                    <select disabled>
+                                        <option selected value="Mathematics">Mathematics</option>
+                                        <option value="English">English Language</option>
+                                        <option value="Social Studies">Social Studies</option>
+                                    </select>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr1">
+                                    <p id="scr1Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <select disabled>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option selected value="English">English Language</option>
+                                        <option value="Social Studies">Social Studies</option>
+                                    </select>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr2">
+                                    <p id="scr2Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects">
+                                    <datalist id="subjects" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr3">
+                                    <p id="scr3Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects2">
+                                    <datalist id="subjects2" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr4">
+                                    <p id="scr4Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects3">
+                                    <datalist id="subjects3" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr5">
+                                    <p id="scr5Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects4">
+                                    <datalist id="subjects4" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr6">
+                                    <p id="scr6Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects5">
+                                    <datalist id="subjects5" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr7">
+                                    <p id="scr7Err" class="errMsg"></p>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" class="subjInpt" list="subjects6">
+                                    <datalist id="subjects6" class="subjects">
+                                        
+                                    </datalist>
+                                </div>
+                                <div class="grid-item div-space">
+                                    <input type="text" id="scr8">
+                                    <p id="scr8Err" class="errMsg"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item div-space">
+                            <label for="">Score and Grade details:</label>
+                            <div class="paragrf-div">
+                                <h4>your grade total is: <p id="sumP"></p></h4>
+                                <h4>your grade average is:  <p id="averageP"></p></h4>
+                                <h4>your point is:<p id="pointP"></p></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" id="acadInfo"><a>Save</a></button>
+                    </div>
+                </form>
+            </div>
+            <hr class="line">
+            <div class="grid-item div-space chartSide">
+                <canvas id="myChart" width="200" height="200"></canvas>
+            </div>
+            <hr class="line">
+            <div class="grid-item div-space summary">
+                <label for="#">Summary Details:</label>
+                <div class="paragrf-div">
+                    <h4>your Name is: <p id="stdntName"></p></h4>
+                    <h4>you are a <p id="gender"></p></h4>
+                    <h4>you are a citizen of: <p id="stdntCountry"></p></h4>
+                    <h4>in <p id="stdntContinent"></p></h4>
+                    <h4>your total grade gotten is: <p id="totalSum"></p></h4>
+                    <h4>Comments:  <p id="summaryMsg"></p></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="/css/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        
+
+
+    </script>
+</body>
+</html>

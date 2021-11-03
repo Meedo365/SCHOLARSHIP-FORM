@@ -1,0 +1,18 @@
+﻿let allSubjects = [
+    {name: 'Accounting and Finance'},
+    {name: 'Agricultural Science'},
+    {name: 'Arabic'},
+    {name: 'Arts (Fine and Creative)'},
+    {name: 'Biology'},
+    {name: 'Commerce'},
+    {name: 'Chemistry'},
+    {name: 'Economics'},
+    {name: 'Food and Nutrition'},
+    {name: 'Geography'},
+    {name: 'Government'},
+    {name: 'History'},
+    {name: 'Home Management'},
+    {name: 'Literature'},
+    {name: 'Music'},
+    {name: 'Physics'}
+]
